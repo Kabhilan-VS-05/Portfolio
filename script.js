@@ -16,41 +16,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Navbar Scroll Effect
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
-            navbar?.classList.add('scrolled');
-        } else {
-            navbar?.classList.remove('scrolled');
-        }
-    });
-
-    // Mobile Bottom Navigation Dock Scroll Observer
+    // Passive & Throttled Scroll Listener (Prevents Forced Reflow & Layout Thrashing)
+    let isTicking = false;
     const sections = document.querySelectorAll('section, header');
     const dockItems = document.querySelectorAll('.dock-item');
 
-    if (dockItems.length > 0) {
-        window.addEventListener('scroll', () => {
-            let currentSectionId = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 120;
-                const sectionHeight = section.offsetHeight;
-                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                    currentSectionId = section.getAttribute('id') || '';
-                }
-            });
+    window.addEventListener('scroll', () => {
+        if (!isTicking) {
+            window.requestAnimationFrame(() => {
+                const scrollY = window.scrollY;
 
-            dockItems.forEach(item => {
-                item.classList.remove('active');
-                const href = item.getAttribute('href');
-                if (href === '#' && (currentSectionId === '' || currentSectionId === 'hero')) {
-                    item.classList.add('active');
-                } else if (href === `#${currentSectionId}`) {
-                    item.classList.add('active');
+                // Navbar Scrolled Effect
+                if (scrollY > 40) {
+                    navbar?.classList.add('scrolled');
+                } else {
+                    navbar?.classList.remove('scrolled');
                 }
+
+                // Mobile Bottom Dock Observer
+                if (dockItems.length > 0) {
+                    let currentSectionId = '';
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop - 120;
+                        const sectionHeight = section.offsetHeight;
+                        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                            currentSectionId = section.getAttribute('id') || '';
+                        }
+                    });
+
+                    dockItems.forEach(item => {
+                        const href = item.getAttribute('href');
+                        const isActive = (href === '#' && (currentSectionId === '' || currentSectionId === 'hero')) || (href === `#${currentSectionId}`);
+                        item.classList.toggle('active', isActive);
+                    });
+                }
+
+                isTicking = false;
             });
-        });
-    }
+            isTicking = true;
+        }
+    }, { passive: true });
 
     // Smooth Scroll for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

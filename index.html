@@ -8,15 +8,21 @@
     <meta name="description"
         content="Portfolio of Kabhilan V. S. - Software Engineer, Full-Stack Developer, and AI Developer building practical, real-world solutions.">
 
-    <!-- Fonts -->
+    <!-- LCP Image Preload & Preconnect Fonts -->
+    <link rel="preload" as="image" href="photo.png" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Asynchronous Non-blocking Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap">
+    </noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons & Script -->
+    <!-- Deferred Icons & Scripts -->
     <script src="https://unpkg.com/feather-icons" defer></script>
     <script src="script.js" defer></script>
 </head>
@@ -42,7 +48,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="hero">
         <div class="hero-bg-glow"></div>
         <div class="container hero-container">
             <div class="hero-content">
@@ -80,7 +86,7 @@
 
             <div class="hero-image-container fade-in-up delay-1">
                 <div class="image-wrapper">
-                    <img src="photo.png" alt="Kabhilan V. S." class="hero-image" width="260" height="260" decoding="async">
+                    <img src="photo.png" alt="Kabhilan V. S." class="hero-image" width="240" height="240" fetchpriority="high" decoding="async">
                     <div class="image-glow"></div>
                 </div>
             </div>
