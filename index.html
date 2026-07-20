@@ -4,64 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabhilan VS | Applied Software Developer</title>
+    <title>Kabhilan V. S. | Software Engineer & AI Developer</title>
     <meta name="description"
-        content="Portfolio of Kabhilan VS - Aspiring Full Stack & AI Developer passionate about building practical, real-world software solutions.">
+        content="Portfolio of Kabhilan V. S. - Software Engineer, Full-Stack Developer, and AI Developer building practical, real-world solutions.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Icons & Script -->
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">Kabhilan<span class="accent">.</span></a>
+            <a href="#" class="logo">Kabhilan V. S.</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#honors">Honors</a></li>
                 <li><a href="#contact" class="btn-primary">Contact Me</a></li>
             </ul>
-            <div class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <i data-feather="menu"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-glow-1"></div>
-        <div class="hero-glow-2"></div>
-        <div class="hero-bg"></div>
+        <div class="hero-bg-glow"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="status-badge fade-in-up">Available for opportunities</div>
-                <h1 class="fade-in-up delay-1">Kabhilan <span class="gradient-text">VS</span></h1>
-                <h2 class="fade-in-up delay-2">I build <span class="typing-text"></span></h2>
-                <p class="subtitle fade-in-up delay-3">
-                    Aspiring <span class="highlight">Full Stack</span> and <span class="highlight">AI Developer</span> focused on solving real-world problems through reliable software engineering, automation, and system thinking.
+                <h1 class="fade-in-up text-gradient">Kabhilan V. S.</h1>
+                <h2 class="hero-subtitle fade-in-up delay-2">Software Engineer | Full-Stack & AI Developer</h2>
+                
+                <p class="hero-description fade-in-up delay-2">
+                    I am an Integrated M.Sc. Software Systems student at Kongu Engineering College passionate about building software that solves real-world problems. My expertise spans Full-Stack Development, Artificial Intelligence, Machine Learning, Backend Engineering, Mobile Apps, and Software Architecture.
                 </p>
-                <div class="cta-group fade-in-up delay-4">
-                    <a href="#projects" class="btn-primary">View Work</a>
+
+                <div class="hero-meta fade-in-up delay-2">
+                    <span class="meta-pill"><i data-feather="map-pin"></i> Erode, Tamil Nadu, India</span>
+                    <span class="meta-pill"><i data-feather="award"></i> CGPA: 7.80</span>
+                    <span class="meta-pill"><i data-feather="book-open"></i> Integrated M.Sc. Software Systems</span>
+                </div>
+
+                <div class="cta-group fade-in-up delay-3">
+                    <a href="#projects" class="btn-primary">View Projects</a>
                     <a href="Kabhilan_VS_23ISR021_Resume.pdf" target="_blank" class="btn-outline">
-                        <i data-feather="file-text"></i> Resume
+                        <i data-feather="file-text"></i> Master Resume PDF
                     </a>
-                    <a href="#contact" class="btn-outline">Get in Touch</a>
+                    <div class="social-icon-row">
+                        <a href="mailto:kabhilan2905@gmail.com" class="btn-icon-only" aria-label="Contact Email">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/kabhilan-vs" target="_blank" class="btn-icon-only" aria-label="LinkedIn Profile">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-icon-only" aria-label="GitHub Profile">
+                            <i data-feather="github"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="hero-image-container fade-in-up delay-3">
+            <div class="hero-image-container fade-in-up delay-1">
                 <div class="image-wrapper">
-                    <img src="photo.png" alt="Kabhilan VS" class="hero-image">
+                    <img src="photo.png" alt="Kabhilan V. S." class="hero-image" width="260" height="260" decoding="async">
+                    <div class="image-glow"></div>
                 </div>
             </div>
         </div>
@@ -69,29 +89,46 @@
 
     <main>
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="section bg-alt">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I am a <strong>4th Year M.Sc. Software Systems (Integrated)</strong> student at Kongu Engineering College with a current CGPA of <strong>7.84</strong>.
-                        </p>
-                        <p>
-                            As an aspiring Full Stack and AI Developer, my passion lies in building practical, real-world software solutions. My interests include AI-assisted systems, accessibility-focused applications, backend integration, mobile development, and scalable application design.
-                        </p>
-                        <p>
-                            My approach goes beyond theory — I focus on solving real-world problems through software engineering and system thinking, creating systems that are deployable, reliable, and genuinely useful.
-                        </p>
-                        <div class="academic-focus">
-                            <div class="tags">
-                                <span class="tag">Full Stack Development</span>
-                                <span class="tag">AI & Computer Vision</span>
-                                <span class="tag">Accessibility Tech</span>
-                                <span class="tag">Automation</span>
-                                <span class="tag">System Design</span>
+                <div class="card expandable-card">
+                    <div class="card-top-bar">
+                        <div>
+                            <h2 class="section-title" style="margin-bottom: 0;">About & Development Philosophy</h2>
+                            <p class="experience-sub" style="margin-top: 0.5rem;">Engineering Mindset & Core Philosophy</p>
+                        </div>
+                        <button class="icon-expand-btn" aria-label="Toggle deep philosophy & traits">
+                            <i data-feather="chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <ul class="highlight-list" style="margin-top: 1rem;">
+                        <li><i data-feather="code"></i> <span><strong>Learn by Building:</strong> I prefer understanding new technologies through practical implementation rather than only reading documentation.</span></li>
+                        <li><i data-feather="target"></i> <span><strong>Value in Every Project:</strong> Every project teaches something valuable, expanding technical knowledge and problem-solving confidence.</span></li>
+                        <li><i data-feather="cpu"></i> <span><strong>Idea to Execution:</strong> Motivated by turning ideas into functional software solutions that create real impact.</span></li>
+                    </ul>
+
+                    <!-- Nested Hide: Career Objective & Personal Traits -->
+                    <div class="expand-drawer">
+                        <div class="drawer-content">
+                            <div class="grid-2">
+                                <div>
+                                    <h4 class="drawer-heading">Career Objective</h4>
+                                    <p class="about-text">
+                                        To become a Software Engineer capable of designing and building scalable, intelligent, and practical software systems. I aim to continuously improve my technical expertise while contributing to projects that create meaningful impact through software and artificial intelligence.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="drawer-heading">Personal Traits & Work Style</h4>
+                                    <ul class="simple-list">
+                                        <li>Enjoys learning new technologies through hands-on, end-to-end projects.</li>
+                                        <li>Prefers building complete systems rather than focusing on a single isolated technology.</li>
+                                        <li>Finds satisfaction in completing functional software solutions.</li>
+                                        <li>Values continuous improvement, code clarity, and practical software architecture.</li>
+                                        <li>Comfortable working across frontend, backend, databases, mobile development, and AI integration.</li>
+                                        <li>Believes software engineering is a continuous learning journey driven by curiosity and persistence.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,54 +136,280 @@
             </div>
         </section>
 
-        <!-- Core Skills -->
-        <section id="skills" class="section bg-dim">
+        <!-- Technical Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header-flex">
+                    <div class="section-header" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+                        <h2 class="section-title">Skills & Expertise</h2>
+                    </div>
+                    <button class="icon-expand-btn" id="toggle-all-skills" aria-label="Toggle all categories">
+                        <i data-feather="plus"></i>
+                    </button>
+                </div>
+                
+                <!-- Upfront View: ONLY 3 Core Cards -->
+                <div class="grid-3" style="margin-top: 1.5rem;">
+                    <div class="card">
+                        <div class="card-title-group" style="margin-bottom: 0.85rem;">
+                            <i data-feather="cpu" class="skill-icon"></i>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag tag-highlight">Python</span>
+                            <span class="tag tag-highlight">PyTorch</span>
+                            <span class="tag tag-highlight">LangChain</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">Ollama</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title-group" style="margin-bottom: 0.85rem;">
+                            <i data-feather="layout" class="skill-icon"></i>
+                            <h3>Full-Stack & Backend</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag tag-highlight">React</span>
+                            <span class="tag tag-highlight">Flask</span>
+                            <span class="tag tag-highlight">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title-group" style="margin-bottom: 0.85rem;">
+                            <i data-feather="terminal" class="skill-icon"></i>
+                            <h3>Mobile & Dev Tools</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag tag-highlight">Flutter</span>
+                            <span class="tag tag-highlight">JavaScript</span>
+                            <span class="tag tag-highlight">Git & GitHub</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Hide 1: Nested Category Grid with Sub-Expanders -->
+                <div class="expand-drawer" id="all-skills-drawer">
+                    <div class="drawer-content">
+                        <h4 class="drawer-heading">Detailed Skill Breakdown</h4>
+                        <div class="grid-3" style="margin-bottom: 1.5rem;">
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Languages</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle languages">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">Python</span><span class="tag tag-highlight">Java</span><span class="tag tag-highlight">JavaScript</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">SQL</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">PHP (Basic)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Frontend</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle frontend">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">React</span><span class="tag tag-highlight">HTML5</span><span class="tag tag-highlight">CSS3</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">Bootstrap</span><span class="tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Backend</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle backend">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">Flask</span><span class="tag tag-highlight">Node.js</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">REST APIs</span><span class="tag">WebSockets</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Databases</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle databases">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">PostgreSQL</span><span class="tag tag-highlight">MongoDB</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">MySQL</span><span class="tag">Firebase</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Mobile</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle mobile">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">Flutter</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">React Native</span><span class="tag">Kivy</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Cloud & Services</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle cloud">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">Firebase</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">AWS (Project Exp)</span><span class="tag">REST API Integration</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sub-Expanders for Large Tag Clouds -->
+                        <div class="grid-2">
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>AI Competencies & Tools</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle AI tools">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">AI Agent Development</span><span class="tag tag-highlight">Prompt Engineering</span><span class="tag">Semantic Search</span><span class="tag">Computer Vision</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <div class="tag-list">
+                                            <span class="tag">Sentence Transformers</span><span class="tag">Embedding Models</span><span class="tag">LLM Integration</span><span class="tag">Docker (Basic)</span><span class="tag">Postman</span><span class="tag">VS Code</span><span class="tag">Android Studio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mini-skill-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h4>Areas of Interest & Soft Skills</h4>
+                                    <button class="icon-expand-btn" aria-label="Toggle soft skills">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="tag-list">
+                                    <span class="tag tag-highlight">Software Engineering</span><span class="tag tag-highlight">Leadership</span><span class="tag">Problem Solving</span>
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <p style="font-size: 0.8rem; color: var(--text-purple); margin-bottom: 0.5rem;">
+                                            <strong>Languages:</strong> Tamil (Native), English (Professional Working Proficiency)
+                                        </p>
+                                        <div class="tag-list">
+                                            <span class="tag">System Design</span><span class="tag">Intelligent Automation</span><span class="tag">Database Design</span><span class="tag">DevOps (Learning)</span><span class="tag">Team Collaboration</span><span class="tag">Adaptability</span><span class="tag">Continuous Learning</span><span class="tag">Critical Thinking</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="experience" class="section bg-alt">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Core Skills</h2>
+                    <h2 class="section-title">Professional Experience</h2>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i data-feather="code" class="skill-icon"></i>
-                            <h3>Languages</h3>
+                
+                <div class="experience-stack">
+                    <div class="card experience-card expandable-card">
+                        <div class="card-top-bar">
+                            <div>
+                                <div class="role-badge">Real Client Project</div>
+                                <h3>Full-Stack Developer &bull; A1 Water Tech</h3>
+                                <p class="experience-sub">Web & Mobile System Architecture</p>
+                            </div>
+                            <button class="icon-expand-btn" aria-label="Toggle full client project details">
+                                <i data-feather="chevron-down"></i>
+                            </button>
                         </div>
-                        <p class="skill-desc">Python, Java, C/C++, JavaScript, SQL, Dart</p>
+                        <p class="experience-summary">
+                            Engineered complete web and mobile application infrastructure for an active client, handling full lifecycle development from requirements gathering to database architecture and backend deployment.
+                        </p>
+                        <div class="expand-drawer">
+                            <div class="drawer-content">
+                                <h4 class="drawer-heading">Detailed Responsibilities & Deliverables</h4>
+                                <ul class="simple-list">
+                                    <li>Requirement gathering directly from the client and business logic mapping.</li>
+                                    <li>Website development with responsive user interfaces.</li>
+                                    <li>Mobile application development for client operations.</li>
+                                    <li>Backend development and API endpoint engineering.</li>
+                                    <li>Database integration and schema modeling.</li>
+                                    <li>Continuous feature modifications based on changing business requirements.</li>
+                                    <li>User experience and client workflow improvements.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i data-feather="layout" class="skill-icon"></i>
-                            <h3>Frontend</h3>
+
+                    <div class="card experience-card">
+                        <div class="card-top-bar">
+                            <div>
+                                <div class="role-badge badge-neutral">Internship</div>
+                                <h3>Web Development Intern &bull; Unified Mentor</h3>
+                                <p class="experience-sub">Web Development & API Integration</p>
+                            </div>
                         </div>
-                        <p class="skill-desc">React JS, React Native, Flutter, HTML/CSS, Tailwind CSS</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i data-feather="server" class="skill-icon"></i>
-                            <h3>Backend</h3>
-                        </div>
-                        <p class="skill-desc">PHP, Flask, Firebase, MySQL, REST APIs</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i data-feather="cpu" class="skill-icon"></i>
-                            <h3>AI & Vision</h3>
-                        </div>
-                        <p class="skill-desc">TensorFlow, OpenCV, YOLOv8, Semantic Search, NLP Basics</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i data-feather="tool" class="skill-icon"></i>
-                            <h3>Tools & Platforms</h3>
-                        </div>
-                        <p class="skill-desc">Git/GitHub, AWS Basics, Ollama, Postman, VS Code</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i data-feather="layers" class="skill-icon"></i>
-                            <h3>Core Concepts</h3>
-                        </div>
-                        <p class="skill-desc">System Design, DevOps & SRE, Automation Engineering</p>
+                        <p class="experience-summary">
+                            Worked as a Web Development Intern, gaining practical experience in modern web technologies, frontend and backend development, and REST API integration.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -155,191 +418,487 @@
         <!-- Projects -->
         <section id="projects" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
+                <div class="section-header-flex">
+                    <div class="section-header" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+                        <h2 class="section-title">Featured Projects</h2>
+                    </div>
+                    <button class="icon-expand-btn" id="toggle-all-projects" aria-label="Toggle all projects">
+                        <i data-feather="plus"></i>
+                    </button>
                 </div>
                 
-                <div class="featured-projects">
-                    <!-- Featured Project 1 -->
-                    <div class="featured-project-card">
-                        <div class="featured-content">
-                            <div class="featured-badge">Ongoing Project</div>
-                            <h3>FindinFront</h3>
-                            <p class="featured-desc">
-                                An AI-powered assistive mobile application for visually impaired users using real-time object detection (YOLOv8). Identifies nearby objects using smartphone cameras and provides voice and vibration feedback for accessibility.
-                            </p>
-                            <div class="tech-stack">
-                                <span>Flutter</span>
-                                <span>TensorFlow Lite</span>
-                                <span>YOLOv8</span>
-                                <span>OpenCV</span>
+                <!-- Upfront View: ONLY 2 Top Projects -->
+                <div class="grid-2" style="margin-top: 1.5rem;">
+                    <!-- Project 1 -->
+                    <div class="card project-card expandable-card">
+                        <div class="card-top-bar">
+                            <h3 class="project-title">AI Semantic Job Role Mapping</h3>
+                            <button class="icon-expand-btn" aria-label="Toggle project details">
+                                <i data-feather="chevron-down"></i>
+                            </button>
+                        </div>
+                        <p class="project-desc">
+                            Converts natural language job descriptions into standardized NCO-2015 codes using FAISS semantic search and sentence transformers.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Flask</span><span>FAISS</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="award-pill">
+                            <i data-feather="award"></i> 2nd Prize &bull; STATATHON 2025-26 Grand Finale
+                        </div>
+                        <div class="expand-drawer">
+                            <div class="drawer-content">
+                                <ul class="simple-list">
+                                    <li>Integrated high-dimensional sentence vector embeddings for high-accuracy occupation classification.</li>
+                                    <li>Optimized search latency using FAISS vector indexing over large job code datasets.</li>
+                                    <li>Designed interactive web portal for query submission and confidence scoring.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Featured Project 2 -->
-                    <div class="featured-project-card">
-                        <div class="featured-content">
-                            <div class="featured-badge">Flagship Project</div>
-                            <h3>NCO Semantic Search System</h3>
-                            <p class="featured-desc">
-                                A semantic mapping system that converts free-text or voice-based job descriptions into NCO-2015 occupation codes using NLP, vector search concepts, and AI-assisted semantic matching.
-                            </p>
-                            <div class="tech-stack">
-                                <span>Flask</span>
-                                <span>Semantic Search</span>
-                                <span>NLP Concepts</span>
-                                <span>Vector DB</span>
+                    <!-- Project 2 -->
+                    <div class="card project-card expandable-card">
+                        <div class="card-top-bar">
+                            <h3 class="project-title">API Downtime Alert Extension</h3>
+                            <button class="icon-expand-btn" aria-label="Toggle project details">
+                                <i data-feather="chevron-down"></i>
+                            </button>
+                        </div>
+                        <p class="project-desc">
+                            Intelligent monitoring platform tracking API health, uptime, latency, failures, and downtime through automated WebSocket notifications.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>Chrome API</span><span>Node.js</span><span>WebSockets</span>
+                        </div>
+                        <div class="award-pill">
+                            <i data-feather="award"></i> 3rd Prize &bull; Hackwave 3.0.1
+                        </div>
+                        <div class="expand-drawer">
+                            <div class="drawer-content">
+                                <ul class="simple-list">
+                                    <li>Automated Chrome extension background scripts for continuous API status checks.</li>
+                                    <li>Real-time WebSocket event triggers with instant browser push alerts.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="subsection-title">More Work</h3>
-                <div class="projects-grid">
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>API Monitoring System</h3>
-                            <i data-feather="activity"></i>
+                <!-- Deep Hide 1: Projects 3 & 4 + Secondary Applications -->
+                <div class="expand-drawer" id="all-projects-drawer">
+                    <div class="drawer-content">
+                        <h4 class="drawer-heading">More Featured Work</h4>
+                        <div class="grid-2" style="margin-bottom: 1.5rem;">
+                            <!-- Project 3 -->
+                            <div class="card project-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h3 class="project-title">Custom AI Agent Builder</h3>
+                                    <button class="icon-expand-btn" aria-label="Toggle project details">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <p class="project-desc">
+                                    Prompt-driven AI agent capable of generating task-specific agents from user instructions.
+                                </p>
+                                <div class="project-tags">
+                                    <span>Python</span><span>LangChain</span><span>Ollama</span><span>OpenAI API</span>
+                                </div>
+                                <div class="award-pill">
+                                    <i data-feather="star"></i> Featured in AIM'26 & GHCI 2025
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <ul class="simple-list">
+                                            <li>Leverages local LLM execution via Ollama and OpenAI API.</li>
+                                            <li>LangChain agentic workflows executing autonomous tasks.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 4 -->
+                            <div class="card project-card expandable-card">
+                                <div class="card-top-bar">
+                                    <h3 class="project-title">Coding Club Platform</h3>
+                                    <button class="icon-expand-btn" aria-label="Toggle project details">
+                                        <i data-feather="chevron-down"></i>
+                                    </button>
+                                </div>
+                                <p class="project-desc">
+                                    Official website for the Coding Club facilitating code submission and event management.
+                                </p>
+                                <div class="project-tags">
+                                    <span>HTML5</span><span>CSS3</span><span>PHP</span><span>MySQL</span>
+                                </div>
+                                <div class="award-pill">
+                                    <i data-feather="award"></i> Appreciation &bull; Hackware'24
+                                </div>
+                                <div class="expand-drawer">
+                                    <div class="drawer-content">
+                                        <ul class="simple-list">
+                                            <li>Engineered submission portal for academic department students.</li>
+                                            <li>Role-based MySQL backend with event panels.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p>Real-time monitoring system tracking API uptime, latency, health, and downtime with automated periodic checks and alerting workflows.</p>
-                        <div class="card-footer">
-                            <span class="project-tag">Python • Automation • APIs</span>
-                        </div>
-                    </div>
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Custom AI Agent System</h3>
-                            <i data-feather="cpu"></i>
-                        </div>
-                        <p>Dynamic AI agent platform capable of generating and executing task-specific agents from simple user prompts using automation logic.</p>
-                        <div class="card-footer">
-                            <span class="project-tag">Python • AI Workflows</span>
-                        </div>
-                    </div>
-                    <!-- Project 5 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Attendo</h3>
-                            <i data-feather="users"></i>
-                        </div>
-                        <p>Mobile-based attendance tracking system for employee and student management with real-time backend integration.</p>
-                        <div class="card-footer">
-                            <span class="project-tag">React Native • Firebase • OpenCV</span>
-                        </div>
-                    </div>
-                    <!-- Project 6 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>DirectFarm / AgriTrack</h3>
-                            <i data-feather="shopping-cart"></i>
-                        </div>
-                        <p>Smart farming management platform designed for optimized crop planning and decision-making using structured agricultural data.</p>
-                        <div class="card-footer">
-                            <span class="project-tag">React JS • PHP • MySQL</span>
-                        </div>
-                    </div>
-                    <!-- Project 7 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Plastic Waste Detection</h3>
-                            <i data-feather="trash-2"></i>
-                        </div>
-                        <p>AI-powered waste management system using computer vision and deep learning for waste identification and segregation.</p>
-                        <div class="card-footer">
-                            <span class="project-tag">Python • TensorFlow • OpenCV</span>
-                        </div>
-                    </div>
-                    <!-- Project 8 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Animal Poaching Detection</h3>
-                            <i data-feather="camera"></i>
-                        </div>
-                        <p>A vision-based monitoring system using computer vision techniques to detect illegal hunting activities in wildlife zones.</p>
-                        <div class="card-footer">
-                            <span class="project-tag">Python • OpenCV • Vision</span>
+
+                        <!-- Deep Hide 2: Secondary Projects Grid -->
+                        <h4 class="drawer-heading">Additional Projects & Hackathon Applications</h4>
+                        <div class="grid-3">
+                            <div class="mini-card">
+                                <h4>FindinFront</h4>
+                                <p>Assistive mobile app providing real-time vision feedback via spatial audio & vibration.</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>Poaching Detection System</h4>
+                                <p>AI computer vision solution identifying illegal wildlife activity in surveillance feeds.</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>AgriTrack</h4>
+                                <p>Smart agricultural management system supporting crop planning & resource analytics.</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>Attendo</h4>
+                                <p>Attendance management application designed for efficient tracking.</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>V-Learn</h4>
+                                <p>Learning platform for students to access, share, and collaborate on educational resources.</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>DirectFarm</h4>
+                                <p>Direct farmer-to-consumer digital market platform built for transparent trade.</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>Community Guardian</h4>
+                                <p>Healthcare API Monitoring System. <strong>Selected for Round 2 &bull; GHCI 2025</strong></p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>Tourist Application</h4>
+                                <p>Location-based tourism application. <strong>Selected for Round 2 &bull; Odoo x SNS</strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience" class="section bg-dim">
+        <!-- Academic Journey -->
+        <section id="journey" class="section bg-alt">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Experience & Activities</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Hackathons & Technical Events</h3>
-                            <p>Active participant in various technical challenges, coding competitions, and team-based problem-solving events.</p>
+                <div class="card expandable-card">
+                    <div class="card-top-bar">
+                        <div>
+                            <span class="edu-years">2023 &ndash; 2028</span>
+                            <h3>Integrated M.Sc. Software Systems</h3>
+                            <p class="edu-college">Kongu Engineering College, Erode, Tamil Nadu &bull; <strong>CGPA: 7.80</strong></p>
                         </div>
+                        <button class="icon-expand-btn" aria-label="Toggle academic timeline">
+                            <i data-feather="chevron-down"></i>
+                        </button>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Competition Winner</h3>
-                            <p>Recognized and won prizes in game development and diverse non-technical competitions.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Academic & Independent Projects</h3>
-                            <p>Consistently building practical systems to apply theoretical knowledge to practice, bridging the gap between learning and real-world deployment.</p>
+
+                    <!-- Nested Accordion Timeline -->
+                    <div class="expand-drawer">
+                        <div class="drawer-content">
+                            <h4 class="drawer-heading" style="margin-bottom: 1rem;">Semester-by-Semester Timeline (Years 1 to 4)</h4>
+                            <div class="accordion-list">
+                                <!-- Year 4 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span class="accordion-title">Fourth Year (2026&ndash;2027)</span>
+                                        <i data-feather="chevron-down" class="accordion-icon"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="accordion-body">
+                                            <h4 class="drawer-heading">Semester 7</h4>
+                                            <ul class="simple-list">
+                                                <li>
+                                                    <i data-feather="award" style="width: 14px; height: 14px; color: var(--accent-sky);"></i> 
+                                                    <strong>Achievement:</strong> Second Prize &ndash; STATATHON 2025-26 Grand Finale (National Level)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Year 3 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span class="accordion-title">Third Year (2025&ndash;2026)</span>
+                                        <i data-feather="chevron-down" class="accordion-icon"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="accordion-body">
+                                            <h4 class="drawer-heading">Semester 5</h4>
+                                            <ul class="simple-list" style="margin-bottom: 1.25rem;">
+                                                <li><strong>Achievements:</strong> First Prize Proof of Concept, Second Prize Ideathon, First Prize Quantum Fest, Third Prize Hackwave 3.0.1, Second Prize Algo Arena</li>
+                                                <li><strong>Projects:</strong> API Monitoring & Downtime Alert, Poaching Detection, Crypto Analysis with Ransomware Detection, AI Job Role Mapping</li>
+                                                <li><strong>Leadership:</strong> Executive Head of Coding Club, Class Representative, UI/UX Coordinator (Quantum Fest)</li>
+                                                <li><strong>Internship:</strong> Web Development Intern at Unified Mentor</li>
+                                                <li><strong>Hackathons:</strong> KPIT Sparkle (Team Leader), Odoo × NMIT, START-A-THON'25</li>
+                                            </ul>
+
+                                            <h4 class="drawer-heading">Semester 6</h4>
+                                            <ul class="simple-list">
+                                                <li><strong>Projects:</strong> Custom AI Agent, Tourist Application, Community Guardian, AI for Learning & Developer Productivity</li>
+                                                <li><strong>Hackathons:</strong> AIM'26, AI for Bharat (Team Leader), Odoo × SNS Coimbatore (Team Leader, Round 2), GHCI 2025 (Team Leader, Round 2)</li>
+                                                <li><strong>Leadership:</strong> UI/UX Coordinator &ndash; MarkUs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Year 2 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span class="accordion-title">Second Year (2024&ndash;2025)</span>
+                                        <i data-feather="chevron-down" class="accordion-icon"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="accordion-body">
+                                            <h4 class="drawer-heading">Semester 3</h4>
+                                            <ul class="simple-list" style="margin-bottom: 1.25rem;">
+                                                <li><strong>Activities:</strong> Paper Presentation (Emergency Drone System), Ideathon (DirectFarm), Internal Hackathon (Open Source Security Fuzzing), NASSCOM Submission (Emergency Drone System), Quantum Fest, Login 2K24</li>
+                                                <li><strong>Leadership:</strong> Executive Member of Coding Club</li>
+                                            </ul>
+
+                                            <h4 class="drawer-heading">Semester 4</h4>
+                                            <ul class="simple-list">
+                                                <li><strong>Projects & Activities:</strong> Project Expo (DirectFarm), Hackwave 2.0 (ML Stock Forecasting), E-Horyzon (Attendance App - Team Leader), Hacknovate'25 (KEC Study Hub), Proof of Concept (DirectFarm)</li>
+                                                <li><strong>Leadership:</strong> Event Coordinator &ndash; Hackwave, Event Coordinator &ndash; Code Carnival</li>
+                                                <li><strong>Cryptera 2025 Participations:</strong> CSS Battle, UI Design, Code in Chaos, Prompt Engineering</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Year 1 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span class="accordion-title">First Year (2023&ndash;2024)</span>
+                                        <i data-feather="chevron-down" class="accordion-icon"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="accordion-body">
+                                            <h4 class="drawer-heading">Semester 1</h4>
+                                            <ul class="simple-list" style="margin-bottom: 1.25rem;">
+                                                <li><strong>Achievements:</strong> Appreciation Award &ndash; Hackware'24 (Team Leader), First Prize &ndash; KEC Hackathon 2024 (Pygame Development), First Prize &ndash; Video Editing Competition</li>
+                                                <li><strong>Learning Focus:</strong> Frontend Development, GitHub, Team Collaboration, Basic Backend</li>
+                                            </ul>
+
+                                            <h4 class="drawer-heading">Semester 2</h4>
+                                            <ul class="simple-list">
+                                                <li><strong>Focus:</strong> Focused on improving development skills through hands-on projects and self-learning.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <div class="container contact-container">
-                <div class="section-header">
-                    <h2 class="section-title">Let's Connect</h2>
+        <!-- Honors Section -->
+        <section id="honors" class="section">
+            <div class="container">
+                <div class="card expandable-card">
+                    <div class="card-top-bar">
+                        <div>
+                            <h2 class="section-title" style="margin-bottom: 0;">Honors, Leadership & Certifications</h2>
+                            <p class="experience-sub" style="margin-top: 0.5rem;">National Wins, Leadership Roles & Professional Credentials</p>
+                        </div>
+                        <button class="icon-expand-btn" aria-label="Toggle full honors breakdown">
+                            <i data-feather="chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid-2" style="margin-top: 1rem;">
+                        <div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                                <strong style="color: var(--text-blue);">Top Milestone:</strong> Second Prize &bull; STATATHON 2025-26 Grand Finale (National Level)
+                            </p>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                                <strong>Core Leadership:</strong> Executive Head of Coding Club (PG) & Class Representative
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Granular Sub-Expanders for Honors Categories -->
+                    <div class="expand-drawer">
+                        <div class="drawer-content">
+                            <div class="grid-2" style="margin-bottom: 1.5rem;">
+                                <!-- Leadership Sub-Card -->
+                                <div class="card mini-skill-card expandable-card">
+                                    <div class="card-top-bar">
+                                        <h4>Leadership Experience</h4>
+                                        <button class="icon-expand-btn" aria-label="Toggle leadership details">
+                                            <i data-feather="chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="simple-list">
+                                        <li><strong>Executive Head:</strong> Coding Club (PG)</li>
+                                        <li><strong>Class Representative:</strong> Dept of Computer Technology (PG)</li>
+                                    </ul>
+                                    <div class="expand-drawer">
+                                        <div class="drawer-content">
+                                            <ul class="simple-list">
+                                                <li><strong>Event Coordinator:</strong> Hackwave, Code Carnival</li>
+                                                <li><strong>UI/UX Coordinator:</strong> Quantum Fest, MarkUs</li>
+                                                <li><strong>Team Leader:</strong> Hackware'24, Project Expo, E-Horyzon, KPIT Sparkle, Odoo × SNS, AI for Bharat, GHCI 2025</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Awards Sub-Card -->
+                                <div class="card mini-skill-card expandable-card">
+                                    <div class="card-top-bar">
+                                        <h4>Awards & Achievements</h4>
+                                        <button class="icon-expand-btn" aria-label="Toggle awards details">
+                                            <i data-feather="chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="simple-list">
+                                        <li><strong style="color: var(--text-blue);">National Level:</strong> Second Prize &ndash; STATATHON 2025-26</li>
+                                        <li>First Prize: KEC Hackathon 2024</li>
+                                    </ul>
+                                    <div class="expand-drawer">
+                                        <div class="drawer-content">
+                                            <ul class="simple-list">
+                                                <li>First Prize: Proof of Concept 2025</li>
+                                                <li>First Prize: Quantum Fest 2K25</li>
+                                                <li>Second Prize: Ideathon 2025</li>
+                                                <li>Third Prize: Hackwave 3.0.1</li>
+                                                <li>Appreciation Award: Hackware'24</li>
+                                                <li>First Prize: Video Editing Competition</li>
+                                                <li>Second Prize: Algo Arena</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-2">
+                                <!-- Hackathons Sub-Card -->
+                                <div class="card mini-skill-card expandable-card">
+                                    <div class="card-top-bar">
+                                        <h4>Hackathons & Selections</h4>
+                                        <button class="icon-expand-btn" aria-label="Toggle hackathons details">
+                                            <i data-feather="chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="tag-list">
+                                        <span class="tag tag-highlight">STATATHON 2025-26</span><span class="tag tag-highlight">AIM'26</span><span class="tag tag-highlight">GHCI 2025</span>
+                                    </div>
+                                    <div class="expand-drawer">
+                                        <div class="drawer-content">
+                                            <div class="tag-list" style="margin-bottom: 0.75rem;">
+                                                <span class="tag">AI for Bharat</span><span class="tag">KPIT Sparkle</span><span class="tag">Smart India Hackathon</span><span class="tag">Odoo × NMIT</span><span class="tag">Odoo × SNS</span><span class="tag">Hackwave</span><span class="tag">Hackwave 2.0</span><span class="tag">Hackware</span><span class="tag">KEC Hackathon</span><span class="tag">Cryptera</span><span class="tag">START-A-THON</span>
+                                            </div>
+                                            <h5 style="font-size: 0.8rem; color: var(--text-blue); margin-bottom: 0.4rem;">Round Selections</h5>
+                                            <ul class="simple-list">
+                                                <li><i data-feather="check-circle" style="width: 12px; height: 12px; color: var(--accent-sky);"></i> Qualified initial rounds &ndash; STATATHON 2025</li>
+                                                <li><i data-feather="check-circle" style="width: 12px; height: 12px; color: var(--accent-sky);"></i> Selected Round 2 &ndash; GHCI 2025 Hackathon</li>
+                                                <li><i data-feather="check-circle" style="width: 12px; height: 12px; color: var(--accent-sky);"></i> Selected Round 2 &ndash; Odoo × SNS Coimbatore</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Certifications Sub-Card -->
+                                <div class="card mini-skill-card expandable-card">
+                                    <div class="card-top-bar">
+                                        <h4>Certifications</h4>
+                                        <button class="icon-expand-btn" aria-label="Toggle certifications details">
+                                            <i data-feather="chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                                        Certified by <strong>Infosys Springboard</strong> & <strong>NASSCOM FutureSkills Prime</strong>.
+                                    </p>
+                                    <div class="expand-drawer">
+                                        <div class="drawer-content">
+                                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--text-purple); margin-bottom: 0.3rem;">Infosys Springboard</p>
+                                            <ul class="simple-list" style="margin-bottom: 0.75rem;">
+                                                <li>Data Mining Projects with R, Learning Data Mining with R, Agile Testing, Cloud Computing, Virtualization, Machine Learning with Python</li>
+                                            </ul>
+                                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--text-purple); margin-bottom: 0.3rem;">NASSCOM FutureSkills Prime</p>
+                                            <ul class="simple-list">
+                                                <li>Testing Tools, Selenium with Java & Python, API Testing</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="contact-text">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container contact-container">
+                <div class="section-header center-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <p class="contact-desc">
+                    I am always open to discussing full-time opportunities, engineering collaborations, or developer ideas. Feel free to reach out.
                 </p>
 
-                <div class="social-links">
-                    <a href="mailto:kabhilan2905@gmail.com" class="social-btn">
-                        <i data-feather="mail"></i> Email
+                <div class="contact-actions">
+                    <a href="mailto:kabhilan2905@gmail.com" class="btn-primary btn-large">
+                        <i data-feather="mail"></i> Email Me
                     </a>
-                    <a href="https://www.linkedin.com/in/kabhilan-vs" target="_blank" class="social-btn">
+                    <a href="https://linkedin.com/in/kabhilan-vs" target="_blank" class="btn-outline btn-large">
                         <i data-feather="linkedin"></i> LinkedIn
                     </a>
-                    <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="social-btn">
+                    <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-outline btn-large">
                         <i data-feather="github"></i> GitHub
                     </a>
-                </div>
-
-                <div class="motivation-quote">
-                    "I am motivated by building systems that work reliably, help people, and can be used in real-world environments."
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Kabhilan VS. All rights reserved.</p>
+            <p>&copy; 2026 Kabhilan V. S. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Mobile App Bottom Navigation Dock -->
+    <nav class="mobile-bottom-dock" aria-label="Mobile Navigation Dock">
+        <a href="#" class="dock-item active">
+            <i data-feather="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="dock-item">
+            <i data-feather="user"></i>
+            <span>About</span>
+        </a>
+        <a href="#projects" class="dock-item">
+            <i data-feather="grid"></i>
+            <span>Projects</span>
+        </a>
+        <a href="#skills" class="dock-item">
+            <i data-feather="code"></i>
+            <span>Skills</span>
+        </a>
+        <a href="#contact" class="dock-item">
+            <i data-feather="mail"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
 
-    <div class="cursor-glow"></div>
-    <script src="script.js"></script>
-    <script>
-        feather.replace();
-    </script>
 </body>
 
 </html>
