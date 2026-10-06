@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Resume OS — Interactive Developer Portfolio & Live Resume Builder
 
-## Getting Started
+**Resume OS** is a Next.js-powered interactive resume operating system and developer portfolio. Designed with modular section editors, live preview capabilities, and offline browser persistence, it enables software engineers to effortlessly curate and showcase their professional experience, hackathon victories, projects, skills, and certifications.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Key Features
+
+- **Live In-Browser Editors**:
+  - **Personal Info**: Contact channels, social profiles, and bio.
+  - **Experience & Leadership**: Work roles, organizational leadership, and impact statements.
+  - **Projects & Hackathons**: Technical stack tags, live repository links, and award badges.
+  - **Skills & Certifications**: Categorized technical skills and credential verifications.
+  - **Education & Achievements**: Academic history and extracurricular recognitions.
+- **Offline Persistence**: Powered by `useLocalStorage` and React Context for automatic draft saving without requiring external login.
+- **Real-Time Preview**: Instant bidirectional sync between the structured editor forms and formatted resume layout.
+- **Modern Responsive UI**: Built with Next.js App Router, Tailwind CSS, and accessible input components.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, TypeScript)
+- **State Management**: React Context (`ProfileContext.tsx`) + Custom LocalStorage Sync Hook
+- **Styling**: Modern CSS3 / Tailwind CSS
+- **Typing**: Strict TypeScript (`types/resume.ts`)
+
+---
+
+## 📁 Project Architecture
+
+```
+Resume_develop/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx                   # Global layout and font definitions
+│   │   └── page.tsx                     # Main Resume OS editor & preview canvas
+│   ├── components/editor/
+│   │   ├── PersonalInfoEditor.tsx       # Bio & contacts
+│   │   ├── ExperienceEditor.tsx         # Employment history
+│   │   ├── ProjectsEditor.tsx           # Technical project catalog
+│   │   ├── HackathonsEditor.tsx         # Hackathons & awards
+│   │   ├── SkillsEditor.tsx             # Competencies & tools
+│   │   └── AchievementsEditor.tsx       # Honors & milestones
+│   ├── context/
+│   │   └── ProfileContext.tsx           # Global resume data provider
+│   ├── hooks/
+│   │   └── useLocalStorage.ts           # Automatic state persistence
+│   └── types/
+│       └── resume.ts                    # Strongly typed resume schema
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Install Dependencies
+```bash
+npm install
+```
 
-## Learn More
+### 2. Launch Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to start building and customizing your resume.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Build for Production
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+Created by [Kabhilan VS](https://github.com/Kabhilan-VS-05). All rights reserved.
