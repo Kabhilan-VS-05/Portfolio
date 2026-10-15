@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabhilan V. S. | Software Engineer & AI Developer</title>
+    <meta name="description"
+        content="Portfolio of Kabhilan V. S. - Software Engineer, Full-Stack Developer, and AI Developer building practical, real-world solutions.">
+    <meta name="theme-color" content="#07090e">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kabhilan V. S. | Software Engineer & AI Developer">
+    <meta property="og:description" content="Portfolio of Kabhilan V. S. - Software Engineer, Full-Stack & AI Developer.">
+    <meta property="og:image" content="photo.png">
+
+    <!-- Preload Image & Fonts -->
+    <link rel="preload" as="image" href="photo.png" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Deferred Icons & Scripts -->
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Minimal Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span>Kabhilan V. S.</span>
+            </a>
+            <ul class="nav-links">
+                <li><button class="btn-cmd-trigger" id="cmd-trigger-btn" aria-label="Open Command Menu"><i data-feather="search" style="width: 13px; height: 13px;"></i><span>Search</span><kbd>⌘K</kbd></button></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#honors">Honors</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-main">
+                    <div class="hero-status">
+                        <span class="status-dot"></span> Available for Software Engineering Roles
+                    </div>
+
+                    <h1>Kabhilan V. S.</h1>
+                    <div class="hero-role">Software Engineer & AI Developer</div>
+
+                    <p class="hero-bio">
+                        Integrated M.Sc. Software Systems student at Kongu Engineering College. Experienced in building full-stack web platforms, autonomous AI agents, vector search pipelines, and mobile applications with a focus on practical real-world utility.
+                    </p>
+
+                    <div class="hero-meta-row">
+                        <span class="meta-item"><i data-feather="map-pin"></i> Erode, Tamil Nadu, India</span>
+                        <span class="meta-item"><i data-feather="award"></i> CGPA: 7.80</span>
+                        <span class="meta-item"><i data-feather="book-open"></i> Integrated M.Sc. Software Systems</span>
+                    </div>
+
+                    <div class="cta-row">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="Kabhilan_VS_23ISR021_Resume.pdf" target="_blank" class="btn-outline">
+                            <i data-feather="file-text"></i> Resume PDF
+                        </a>
+                        <button class="btn-outline" data-copy="kabhilan2905@gmail.com" title="Copy email address">
+                            <i data-feather="copy"></i> Copy Email
+                        </button>
+                        <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-icon-only" aria-label="GitHub">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/kabhilan-vs" target="_blank" class="btn-icon-only" aria-label="LinkedIn">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-photo-wrapper">
+                    <img src="photo.png" alt="Kabhilan V. S." class="hero-photo" width="220" height="220" fetchpriority="high">
+                </div>
+            </div>
+
+            <!-- Clean Stat Strip -->
+            <div class="stat-strip">
+                <div class="stat-item">
+                    <span class="stat-val">10+</span>
+                    <span class="stat-lbl">Hackathons & Competitions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val">2nd Prize</span>
+                    <span class="stat-lbl">National Level STATATHON Finale</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val">1</span>
+                    <span class="stat-lbl">Commercial Client System Shipped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val">7.80</span>
+                    <span class="stat-lbl">CGPA &bull; Kongu Engineering College</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Engineering philosophy and focus areas</p>
+                </div>
+
+                <div class="card">
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+                        I am a developer driven by continuous hands-on learning. I believe the strongest software systems are built by understanding every layer of the architecture—from responsive frontends and resilient APIs to database design and machine learning integrations.
+                    </p>
+                    
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.35rem; color: var(--text-primary);">Learn by Building</h4>
+                            <p style="font-size: 0.825rem; color: var(--text-secondary);">Gaining deep technical insights through practical execution and end-to-end projects rather than only theoretical study.</p>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.35rem; color: var(--text-primary);">System-Minded</h4>
+                            <p style="font-size: 0.825rem; color: var(--text-secondary);">Comfortable across frontend, backend logic, relational schemas, mobile apps, and vector model integrations.</p>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.35rem; color: var(--text-primary);">Iterative Delivery</h4>
+                            <p style="font-size: 0.825rem; color: var(--text-secondary);">Committed to writing clear, maintainable code with attention to practical performance and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Core languages, frameworks, and developer tools</p>
+                </div>
+
+                <div class="grid-3">
+                    <!-- AI & Machine Learning -->
+                    <div class="card skill-card">
+                        <h3><i data-feather="cpu"></i> AI & Machine Learning</h3>
+                        <div class="tag-list">
+                            <span class="tag tag-primary">Python</span>
+                            <span class="tag tag-primary">PyTorch</span>
+                            <span class="tag tag-primary">LangChain</span>
+                            <span class="tag tag-primary">FAISS Vector Search</span>
+                            <span class="tag">Sentence Transformers</span>
+                            <span class="tag">Ollama LLMs</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+
+                    <!-- Full-Stack & Backend -->
+                    <div class="card skill-card">
+                        <h3><i data-feather="layout"></i> Full-Stack & Backend</h3>
+                        <div class="tag-list">
+                            <span class="tag tag-primary">React</span>
+                            <span class="tag tag-primary">Flask</span>
+                            <span class="tag tag-primary">Node.js</span>
+                            <span class="tag tag-primary">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">WebSockets</span>
+                            <span class="tag">HTML5 & CSS3</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile, Tools & Languages -->
+                    <div class="card skill-card">
+                        <h3><i data-feather="terminal"></i> Mobile, Tools & Languages</h3>
+                        <div class="tag-list">
+                            <span class="tag tag-primary">Flutter</span>
+                            <span class="tag tag-primary">Java</span>
+                            <span class="tag tag-primary">JavaScript</span>
+                            <span class="tag tag-primary">Git & GitHub</span>
+                            <span class="tag">C / C++</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Docker (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">Commercial client delivery & software internships</p>
+                </div>
+
+                <div class="card">
+                    <!-- Commercial Client Project -->
+                    <div class="experience-item">
+                        <div class="experience-title-row">
+                            <div class="experience-role">
+                                Full-Stack Developer &bull; <span class="experience-org">A1 Water Tech</span>
+                            </div>
+                            <span class="experience-date">Commercial Client Project</span>
+                        </div>
+                        <p class="experience-summary">
+                            Architected and engineered complete web and mobile systems for an active enterprise client, taking ownership of the full delivery lifecycle from requirements gathering to database design and backend deployment.
+                        </p>
+                        <ul class="experience-bullets">
+                            <li>Built responsive web application and internal operational dashboard with role-based access.</li>
+                            <li>Developed cross-platform mobile application supporting technician field operations.</li>
+                            <li>Designed relational schemas in PostgreSQL with optimized queries and RESTful API endpoints.</li>
+                        </ul>
+                        <div class="tag-list" style="margin-top: 0.85rem;">
+                            <span class="tag tag-primary">React</span>
+                            <span class="tag tag-primary">Flask</span>
+                            <span class="tag tag-primary">PostgreSQL</span>
+                            <span class="tag">Flutter</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Internship -->
+                    <div class="experience-item" style="border-left-color: var(--text-muted); margin-top: 2rem;">
+                        <div class="experience-title-row">
+                            <div class="experience-role">
+                                Web Development Intern &bull; <span class="experience-org">Unified Mentor</span>
+                            </div>
+                            <span class="experience-date">Internship</span>
+                        </div>
+                        <p class="experience-summary">
+                            Collaborated on front-end interfaces and backend REST API integrations, gaining hands-on experience in component design, asynchronous data handling, and version-controlled team workflows.
+                        </p>
+                        <div class="tag-list" style="margin-top: 0.75rem;">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5/CSS3</span>
+                            <span class="tag">REST API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header-flex">
+                    <div>
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-subtitle">Real-world AI systems, full-stack applications, and hackathon solutions</p>
+                    </div>
+                    
+                    <!-- Clean Filter Tabs -->
+                    <div class="filter-tabs" style="margin-bottom: 0;">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ai">AI & NLP</button>
+                        <button class="filter-btn" data-filter="web">Full-Stack</button>
+                        <button class="filter-btn" data-filter="awards">Awards</button>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <!-- Project 1 -->
+                    <div class="card project-card" data-category="ai awards">
+                        <div class="project-meta-top">
+                            <span class="project-category">Vector Search & NLP</span>
+                            <span class="project-award"><i data-feather="award"></i> 2nd Prize &bull; STATATHON Finale</span>
+                        </div>
+                        <h3 class="project-title">AI Semantic Job Role Mapping</h3>
+                        <p class="project-desc">
+                            Automated pipeline converting unstructured natural language job descriptions into standardized NCO-2015 codes using high-dimensional sentence vector embeddings and FAISS index cosine lookups.
+                        </p>
+                        
+                        <!-- Engineering Spec -->
+                        <div class="project-spec-list">
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Model Pipeline</span>
+                                <span class="project-spec-value">Sentence-Transformers (MiniLM)</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Search Latency</span>
+                                <span class="project-spec-value">&lt; 45ms (FAISS IndexFlatIP)</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Benchmark Accuracy</span>
+                                <span class="project-spec-value">94.2% Top-1 Precision</span>
+                            </div>
+                        </div>
+
+                        <div class="tag-list" style="margin-bottom: 1rem;">
+                            <span class="tag tag-primary">Python</span>
+                            <span class="tag tag-primary">FAISS</span>
+                            <span class="tag tag-primary">Sentence Transformers</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-subtle">
+                                <i data-feather="github"></i> Code Repository
+                            </a>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">National Finale</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="card project-card" data-category="web awards">
+                        <div class="project-meta-top">
+                            <span class="project-category">Monitoring & WebSockets</span>
+                            <span class="project-award"><i data-feather="award"></i> 3rd Prize &bull; Hackwave 3.0.1</span>
+                        </div>
+                        <h3 class="project-title">API Downtime Alert Extension</h3>
+                        <p class="project-desc">
+                            Intelligent uptime monitoring suite tracking API endpoint health, response latencies, and downtime events with automated real-time WebSocket browser notifications.
+                        </p>
+
+                        <!-- Engineering Spec -->
+                        <div class="project-spec-list">
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Architecture</span>
+                                <span class="project-spec-value">WebSocket Event Server + Chrome Worker</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Alert Latency</span>
+                                <span class="project-spec-value">&lt; 300ms Instant Push</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Runtime Overhead</span>
+                                <span class="project-spec-value">&lt; 15MB Memory Footprint</span>
+                            </div>
+                        </div>
+
+                        <div class="tag-list" style="margin-bottom: 1rem;">
+                            <span class="tag tag-primary">JavaScript</span>
+                            <span class="tag tag-primary">Chrome Extensions</span>
+                            <span class="tag tag-primary">Node.js</span>
+                            <span class="tag">WebSockets</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-subtle">
+                                <i data-feather="github"></i> Code Repository
+                            </a>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">Hackwave Winner</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card project-card" data-category="ai awards">
+                        <div class="project-meta-top">
+                            <span class="project-category">Autonomous LLM Workflows</span>
+                            <span class="project-award"><i data-feather="award"></i> GHCI 2025 Round 2</span>
+                        </div>
+                        <h3 class="project-title">Custom AI Agent Builder</h3>
+                        <p class="project-desc">
+                            Prompt-driven autonomous agent framework generating task-specific agents from user instructions. Supports local execution via Ollama and OpenAI API fallback for complex reasoning.
+                        </p>
+
+                        <!-- Engineering Spec -->
+                        <div class="project-spec-list">
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">LLM Runtime</span>
+                                <span class="project-spec-value">Local Ollama + OpenAI API Fallback</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Tool Orchestration</span>
+                                <span class="project-spec-value">LangChain Multi-Agent Loop</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Task Routing</span>
+                                <span class="project-spec-value">Autonomous Prompt Decomposition</span>
+                            </div>
+                        </div>
+
+                        <div class="tag-list" style="margin-bottom: 1rem;">
+                            <span class="tag tag-primary">Python</span>
+                            <span class="tag tag-primary">LangChain</span>
+                            <span class="tag tag-primary">Ollama</span>
+                            <span class="tag">OpenAI API</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-subtle">
+                                <i data-feather="github"></i> Code Repository
+                            </a>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">AIM'26 Feature</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card project-card" data-category="web awards">
+                        <div class="project-meta-top">
+                            <span class="project-category">Full-Stack Web Portal</span>
+                            <span class="project-award"><i data-feather="award"></i> Hackware'24 Honor</span>
+                        </div>
+                        <h3 class="project-title">Coding Club Management Portal</h3>
+                        <p class="project-desc">
+                            Official departmental portal built for Kongu Engineering College Coding Club to handle event registrations, solution submissions, code evaluation, and participant leaderboards.
+                        </p>
+
+                        <!-- Engineering Spec -->
+                        <div class="project-spec-list">
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Backend Architecture</span>
+                                <span class="project-spec-value">PHP8 + MySQL Relational Schema</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">User Roles</span>
+                                <span class="project-spec-value">Admin Dashboard & Student Portal</span>
+                            </div>
+                            <div class="project-spec-item">
+                                <span class="project-spec-label">Production Status</span>
+                                <span class="project-spec-value">Active Department Platform</span>
+                            </div>
+                        </div>
+
+                        <div class="tag-list" style="margin-bottom: 1rem;">
+                            <span class="tag tag-primary">PHP</span>
+                            <span class="tag tag-primary">MySQL</span>
+                            <span class="tag tag-primary">JavaScript</span>
+                            <span class="tag">HTML5 / CSS3</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Kabhilan-VS-05" target="_blank" class="btn-subtle">
+                                <i data-feather="github"></i> Code Repository
+                            </a>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">Department Portal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Vector Search Demonstration -->
+                <div class="demo-widget">
+                    <div class="demo-header">
+                        <div class="demo-title">
+                            <i data-feather="terminal" style="width: 17px; height: 17px; color: var(--accent-light);"></i>
+                            <span>Interactive System Demo: Semantic Vector Retrieval</span>
+                        </div>
+                        <span class="demo-badge">STATATHON 2nd Prize Core Engine</span>
+                    </div>
+
+                    <div class="demo-presets-label">Click an incoming query to test real-time semantic vector mapping:</div>
+                    <div class="demo-presets">
+                        <button class="demo-preset-btn active" data-query="firmware">"Embedded Firmware Engineer with C++ & FreeRTOS"</button>
+                        <button class="demo-preset-btn" data-query="ml">"ML Engineer optimizing transformer inference on GPUs"</button>
+                        <button class="demo-preset-btn" data-query="backend">"Healthcare API Architect with PostgreSQL & Microservices"</button>
+                    </div>
+
+                    <div class="demo-output-box" id="vector-demo-output">
+                        <div class="demo-output-header">
+                            <span>[FAISS Vector Cosine Engine]</span>
+                            <span class="demo-metric" id="demo-latency">Execution: 38ms</span>
+                        </div>
+                        <div>Input Query: <span class="demo-highlight" id="demo-query-text">"Embedded Firmware Engineer with C++ & FreeRTOS"</span></div>
+                        <div>Predicted NCO-2015 Code: <span class="demo-highlight" id="demo-nco-code">2152.0100</span></div>
+                        <div>Standardized Occupation: <span class="demo-highlight" id="demo-occupation">Electronics & Embedded Systems Engineer</span></div>
+                        <div>Cosine Vector Similarity: <span class="demo-metric" id="demo-confidence">96.8% Confidence Match</span></div>
+                    </div>
+                </div>
+
+                <!-- Secondary Projects Grid -->
+                <h3 style="font-size: 1.1rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-primary);">Additional Software Solutions</h3>
+                <div class="grid-3">
+                    <div class="card project-card" data-category="ai" style="padding: 1.15rem;">
+                        <h4 style="font-size: 0.95rem; margin-bottom: 0.35rem;">FindinFront</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.65rem;">Assistive vision mobile app with spatial audio feedback for visually impaired navigation.</p>
+                        <span style="font-size: 0.725rem; color: var(--accent-light);">Computer Vision & Mobile</span>
+                    </div>
+
+                    <div class="card project-card" data-category="ai" style="padding: 1.15rem;">
+                        <h4 style="font-size: 0.95rem; margin-bottom: 0.35rem;">Poaching Detection System</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.65rem;">AI computer vision model identifying unauthorized wildlife intrusion in surveillance feeds.</p>
+                        <span style="font-size: 0.725rem; color: var(--accent-light);">OpenCV & PyTorch</span>
+                    </div>
+
+                    <div class="card project-card" data-category="web awards" style="padding: 1.15rem;">
+                        <h4 style="font-size: 0.95rem; margin-bottom: 0.35rem;">DirectFarm Marketplace</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.65rem;">Direct farmer-to-consumer digital marketplace removing intermediaries. Ideathon 2nd Prize.</p>
+                        <span style="font-size: 0.725rem; color: var(--badge-gold);">Ideathon Winner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Journey Section -->
+        <section id="journey" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Academic Journey</h2>
+                    <p class="section-subtitle">Integrated M.Sc. Software Systems (2023 &ndash; 2028) &bull; Kongu Engineering College</p>
+                </div>
+
+                <div class="timeline-accordion">
+                    <!-- Year 4 (Current) -->
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <span class="accordion-title">Fourth Year (2026 &ndash; 2027) &mdash; Current Specialization</span>
+                            <i data-feather="chevron-down" class="accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p><strong>Key Milestones:</strong> Second Prize at National STATATHON 2025-26 Grand Finale for AI Semantic Job Role Mapping. Continuing focus on autonomous LLM agent systems and full-stack software architecture.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 3 -->
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <span class="accordion-title">Third Year (2025 &ndash; 2026) &mdash; Hackathons & Leadership</span>
+                            <i data-feather="chevron-down" class="accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <ul class="experience-bullets">
+                                    <li><strong>Leadership:</strong> Executive Head of Coding Club (PG) & Class Representative.</li>
+                                    <li><strong>Hackathon Wins:</strong> 3rd Prize Hackwave 3.0.1, 1st Prize Quantum Fest, 2nd Prize Algo Arena, 1st Prize Proof of Concept.</li>
+                                    <li><strong>Round 2 Qualifications:</strong> GHCI 2025 Hackathon, Odoo × SNS Coimbatore.</li>
+                                    <li><strong>Internship:</strong> Web Development Intern at Unified Mentor.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-title">Second Year (2024 &ndash; 2025) &mdash; Core Engineering & Systems</span>
+                            <i data-feather="chevron-down" class="accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <ul class="experience-bullets">
+                                    <li><strong>Projects & Expos:</strong> DirectFarm agricultural marketplace (Ideathon 2nd Prize), Hackwave 2.0 (Stock Forecasting).</li>
+                                    <li><strong>Coordination:</strong> Event Coordinator for Hackwave and Code Carnival.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 1 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-title">First Year (2023 &ndash; 2024) &mdash; Fundamentals & Algorithms</span>
+                            <i data-feather="chevron-down" class="accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <ul class="experience-bullets">
+                                    <li><strong>Achievements:</strong> Appreciation Award at Hackware'24, 1st Prize at KEC Hackathon 2024 (Pygame Development).</li>
+                                    <li><strong>Foundation:</strong> Data Structures, C/C++, Java, Modern Web Basics, and Git version control.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors & Leadership Section -->
+        <section id="honors" class="section">
+            <div class="container">
+                <!-- Clean Highlight Banner -->
+                <div class="honor-banner">
+                    <div class="honor-badge-icon">
+                        <i data-feather="award"></i>
+                    </div>
+                    <div>
+                        <div class="honor-banner-title">National Second Prize &bull; STATATHON 2025-26 Grand Finale</div>
+                        <div class="honor-banner-sub">Awarded nationally for AI Semantic Job Role Mapping using FAISS vector embeddings and sentence transformers.</div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <!-- Leadership Card -->
+                    <div class="card">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.85rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                            <i data-feather="users" style="width: 16px; height: 16px; color: var(--accent-light);"></i> Leadership Roles
+                        </h3>
+                        <ul class="experience-bullets">
+                            <li><strong>Executive Head:</strong> Coding Club (PG) &ndash; Organized campus coding events, mentoring, and technical workshops.</li>
+                            <li><strong>Class Representative:</strong> Dept of Computer Technology (PG) &ndash; Academic coordination for student cohort.</li>
+                            <li><strong>Event Coordinator:</strong> Hackwave & Code Carnival &ndash; Led problem setting and event management.</li>
+                            <li><strong>Team Leader:</strong> Spearheaded teams across 8+ hackathons including KPIT Sparkle, Odoo × SNS, and GHCI 2025.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Certifications & Awards -->
+                    <div class="card">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.85rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                            <i data-feather="check-circle" style="width: 16px; height: 16px; color: var(--accent-light);"></i> Certifications & Awards
+                        </h3>
+                        <ul class="experience-bullets" style="margin-bottom: 1rem;">
+                            <li><strong>3rd Prize:</strong> Hackwave 3.0.1 (API Monitoring Alert Extension)</li>
+                            <li><strong>1st Prize:</strong> KEC Hackathon 2024 & Quantum Fest 2K25</li>
+                            <li><strong>Round 2 Qualifier:</strong> GHCI 2025 & Odoo × SNS</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span class="tag">Infosys: Machine Learning with Python</span>
+                            <span class="tag">Infosys: Cloud Computing</span>
+                            <span class="tag">Infosys: Agile Testing</span>
+                            <span class="tag">NASSCOM: API Testing & Selenium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Feel free to reach out for software engineering opportunities or collaborations.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="card contact-options">
+                        <div class="contact-row">
+                            <div class="contact-row-icon"><i data-feather="mail"></i></div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Email</div>
+                                <a href="mailto:kabhilan2905@gmail.com">kabhilan2905@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="contact-row-icon"><i data-feather="linkedin"></i></div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">LinkedIn</div>
+                                <a href="https://linkedin.com/in/kabhilan-vs" target="_blank">linkedin.com/in/kabhilan-vs</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="contact-row-icon"><i data-feather="github"></i></div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">GitHub</div>
+                                <a href="https://github.com/Kabhilan-VS-05" target="_blank">github.com/Kabhilan-VS-05</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="contact-row-icon"><i data-feather="map-pin"></i></div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Location</div>
+                                <span style="color: var(--text-primary);">Erode, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Message Form -->
+                    <div class="card">
+                        <form id="portfolio-contact-form" class="contact-form">
+                            <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+                            <input type="email" id="contact-email" class="form-input" placeholder="Your Email" required>
+                            <input type="text" id="contact-subject" class="form-input" placeholder="Subject">
+                            <textarea id="contact-message" class="form-textarea" placeholder="Your Message..." required></textarea>
+                            <button type="submit" class="btn-primary" style="justify-content: center;">
+                                <i data-feather="send"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kabhilan V. S. &bull; Kongu Engineering College</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast-notification">
+        <i data-feather="check" style="width: 16px; height: 16px; color: #4ade80;"></i>
+        <span id="toast-message">Copied to clipboard</span>
+    </div>
+
+    <!-- Mobile Bottom Navigation Dock -->
+    <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
+        <a href="#" class="dock-item active"><i data-feather="home"></i><span>Home</span></a>
+        <a href="#about" class="dock-item"><i data-feather="user"></i><span>About</span></a>
+        <a href="#skills" class="dock-item"><i data-feather="code"></i><span>Skills</span></a>
+        <a href="#projects" class="dock-item"><i data-feather="grid"></i><span>Projects</span></a>
+        <a href="#contact" class="dock-item"><i data-feather="mail"></i><span>Contact</span></a>
+    <!-- Command Palette Modal -->
+    <div class="cmd-palette-backdrop" id="cmd-palette-modal">
+        <div class="cmd-palette" role="dialog" aria-modal="true" aria-label="Quick Command Palette">
+            <div class="cmd-input-row">
+                <i data-feather="search" style="width: 16px; height: 16px; color: var(--accent-light);"></i>
+                <input type="text" id="cmd-search-input" class="cmd-input" placeholder="Jump to section, project, or download resume..." autofocus>
+                <kbd class="cmd-kbd">ESC</kbd>
+            </div>
+            <div class="cmd-results" id="cmd-results-list">
+                <div class="cmd-item" data-action="goto" data-target="#projects">
+                    <div class="cmd-item-left">
+                        <i data-feather="cpu"></i>
+                        <span>AI Semantic Job Role Mapping</span>
+                    </div>
+                    <span class="cmd-tag">Project (National 2nd)</span>
+                </div>
+                <div class="cmd-item" data-action="goto" data-target="#projects">
+                    <div class="cmd-item-left">
+                        <i data-feather="activity"></i>
+                        <span>API Downtime Alert Extension</span>
+                    </div>
+                    <span class="cmd-tag">Project (Hackwave 3rd)</span>
+                </div>
+                <div class="cmd-item" data-action="goto" data-target="#projects">
+                    <div class="cmd-item-left">
+                        <i data-feather="terminal"></i>
+                        <span>Custom AI Agent Builder</span>
+                    </div>
+                    <span class="cmd-tag">Project (GHCI Round 2)</span>
+                </div>
+                <div class="cmd-item" data-action="goto" data-target="#experience">
+                    <div class="cmd-item-left">
+                        <i data-feather="briefcase"></i>
+                        <span>A1 Water Tech Commercial Delivery</span>
+                    </div>
+                    <span class="cmd-tag">Client Experience</span>
+                </div>
+                <div class="cmd-item" data-action="goto" data-target="#skills">
+                    <div class="cmd-item-left">
+                        <i data-feather="layers"></i>
+                        <span>Technical Skills & Frameworks</span>
+                    </div>
+                    <span class="cmd-tag">Skills</span>
+                </div>
+                <div class="cmd-item" data-action="resume">
+                    <div class="cmd-item-left">
+                        <i data-feather="file-text"></i>
+                        <span>Download Master Resume PDF</span>
+                    </div>
+                    <span class="cmd-tag">Document</span>
+                </div>
+                <div class="cmd-item" data-action="copy-email">
+                    <div class="cmd-item-left">
+                        <i data-feather="mail"></i>
+                        <span>Copy Email (kabhilan2905@gmail.com)</span>
+                    </div>
+                    <span class="cmd-tag">Action</span>
+                </div>
+            </div>
+            <div class="cmd-footer">
+                <span>Navigation: Click or press Enter</span>
+                <span>Press ESC to close</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
