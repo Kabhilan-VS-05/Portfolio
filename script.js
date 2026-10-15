@@ -313,6 +313,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         behavior: 'smooth'
                     });
                 }
+            } else if (action === 'repo') {
+                const url = item.getAttribute('data-url');
+                if (url) {
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
             } else if (action === 'resume') {
                 window.open('Kabhilan_VS_23ISR021_Resume.pdf', '_blank');
             } else if (action === 'copy-email') {
