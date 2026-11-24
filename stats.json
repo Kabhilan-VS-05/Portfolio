@@ -497,7 +497,8 @@
    ],
    [
     13,
-    3
+    3,
+    0
    ]
   ],
   "calendar_start": "2025-11-23"
@@ -509,7 +510,7 @@
   "hard": 13,
   "streak": 4,
   "active_days": 24,
-  "ranking": 980570
+  "ranking": 980964
  },
  "gfg": {
   "solved": 385,
@@ -518,5 +519,5 @@
   "institute": "Kongu Engineering College (KEC), Erode",
   "longest_streak": 2
  },
- "updated": "2026-11-23"
+ "updated": "2026-11-24"
 }
