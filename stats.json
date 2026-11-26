@@ -499,19 +499,20 @@
     13,
     3,
     0,
+    0,
     0
    ]
   ],
   "calendar_start": "2025-11-23"
  },
  "leetcode": {
-  "solved": 182,
+  "solved": 183,
   "easy": 83,
-  "medium": 86,
+  "medium": 87,
   "hard": 13,
   "streak": 4,
-  "active_days": 25,
-  "ranking": 980964
+  "active_days": 26,
+  "ranking": 981362
  },
  "gfg": {
   "solved": 385,
@@ -520,5 +521,5 @@
   "institute": "Kongu Engineering College (KEC), Erode",
   "longest_streak": 2
  },
- "updated": "2026-11-25"
+ "updated": "2026-11-26"
 }
